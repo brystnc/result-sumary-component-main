@@ -128,20 +128,18 @@
     color: var(--foreground-color);
   }
 
-  h2 {
+  .header {
     font-size: 1rem;
     margin: 0;
     font-weight: 500;
   }
-
-  @media (min-width: 768px) {
-    h1 {
-      font-size: 3rem;
-    }
-  }
 }
 
 @layer layout {
+  main {
+    background-color: var(--color-neutral-white);
+  }
+
   .summary-card {
     display: flex;
     flex-direction: column;
@@ -181,7 +179,7 @@
     align-items: center;
     width: auto;
     height: auto;
-    padding: 2.6em 3.2em;
+    padding: 2em 4em;
     margin: 0 auto;
     background-image: linear-gradient(
       var(--color-circle-violet-blue),
