@@ -73,10 +73,6 @@
   }
 
   :root {
-    --primary-color: #0063cc;
-    --background-color: #edf3fa;
-    --foreground-color: #000000;
-
     /* Primary Colors */
     --color-primary-light-red: hsla(0, 100%, 67%);
     --color-primary-orangey-yellow: hsl(39, 100%, 56%);
@@ -124,8 +120,7 @@
 
   body {
     font-family: var(--font-main);
-    background-color: var(--background-color);
-    color: var(--foreground-color);
+    background-color: var(--color-neutral-white);
   }
 
   .header {
@@ -136,10 +131,6 @@
 }
 
 @layer layout {
-  main {
-    background-color: var(--color-neutral-white);
-  }
-
   .summary-card {
     display: flex;
     flex-direction: column;
